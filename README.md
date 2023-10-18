@@ -29,7 +29,7 @@ Any changes you made to the Makefile or existing files that would affect grading
 
 Plan outlining individual contributions for each member of your group:
     Yuan: 3.1.1 3.1.2 
-    Matt: 3.1.1
+    Matt: 3.1.2
     Thomas:
 
 Plan on how you are going to construct the pipes and inter-process communication.  (high-level pseudocode would be acceptable/preferred for this part):
