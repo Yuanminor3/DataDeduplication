@@ -5,7 +5,6 @@
 #include "../include/hash.h"
 #include "../include/utils.h"
 
-#define PATH_MAX 1024
 #define BUFFER_SIZE 1024
 
 char *output_file_folder = "output/inter_submission/";
@@ -16,6 +15,7 @@ int main(int argc, char* argv[]) {
         printf("Usage: Final Submission --> ./leaf_process <file_path> <pipe_write_end>\n");
         return -1;
     }
+
     //TODO(): get <file_path> <pipe_write_end> from argv[]
     char *file_path = argv[1];
     int pipe_write_end = atoi(argv[2]);
@@ -59,7 +59,7 @@ int main(int argc, char* argv[]) {
 
         //TODO(step5): free any arrays that are allocated using malloc!! Free the string returned from extract_root_directory()!! It is allocated using malloc in extract_root_directory()
         // Free allocated memory
-    
+        //free(file_name);
         free(root_directory);
 
     }else{

@@ -36,6 +36,7 @@ define prepare_root_dir
 endef
 
 inter:
+
 	$(foreach root, $(ROOT_DIRS), $(call prepare_root_dir,$(root)))
 	./leaf_process ./root_directories/root1/sub_1/WorldStage_2.txt 0
 	./leaf_process ./root_directories/root2/FairySong_1.txt 0
